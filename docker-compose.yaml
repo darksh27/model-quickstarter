@@ -1,0 +1,10 @@
+version: "2"
+
+service:
+ generator:
+  build: .
+  volumes:
+   - ~/dbpedia/models:/opt/models
+   - ~/dbpedia/wdir:/opt/wdir
+   - ~/dbpedis/data:/opt/data
+  command: ./index_db.sh wdir it_IT it/stopwords.list Italian models/it
