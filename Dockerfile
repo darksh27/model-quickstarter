@@ -1,5 +1,4 @@
-FROM java:8
-
+FROM java:7
 RUN apt-get update && apt-get install -y maven git
 
 RUN git clone --depth 1 https://github.com/darksh27/extraction-framework.git
